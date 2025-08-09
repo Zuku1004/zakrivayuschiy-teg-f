@@ -277,7 +277,7 @@
   block-size: 39px;
 }
 
-@media (width >= 375px) {
+@media (min-width: 376px) {
   .save-container__btn {
     flex-direction: row;
     justify-content: center;
