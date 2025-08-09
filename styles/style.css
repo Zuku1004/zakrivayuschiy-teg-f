@@ -102,6 +102,10 @@
 
 .content-card__media img {
   display: block;
+  object-fit: cover;
+  object-position: center;
+  inline-size: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .first-sprint {
@@ -209,31 +213,27 @@
   color: #fff;
   mix-blend-mode: difference;
   white-space: nowrap;
-  margin-right: 3px;
+  position: relative;
 }
 
 .save-icon {
   mix-blend-mode: difference;
 }
 
-.save-container {
-  display: flex;
-  justify-content: center;
-  padding-block-end: 100px;
-  background-color: transparent;
-}
-
-.save-container__btn {
- margin-bottom: 103px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  inline-size: 333px;
-  block-size: 55px;
-  background-color: transparent;
-  background-color: #fff;
-}
+  .save-container__btn {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   block-size: 85px;
+   margin: 0 auto 100px; 
+   padding: 5px 20px 8px 20px; 
+   max-inline-size: 83vw; 
+   background-color: #fff;
+   flex-wrap: wrap;
+   object-fit: contain;
+   gap: 8px;
+  }
 
 .save-icon {
   width: var(--floppy-size, 21px);
@@ -270,25 +270,27 @@
   background-color: rgb(0 0 0 / 0.75);
 }
 
- .sprint {
-    width: 696px;
-    height: 696px;
-  }
+.floppy-icon {
+  position: relative;
+  inline-size: 30px;
+  mix-blend-mode: difference;
+  block-size: 39px;
+}
 
 @media (width >= 375px) {
   .save-container__btn {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     --save-section-padding: 0;
-  }
-
-  .save-icon {
-    --floppy-size: 28px;
-  }
-
-  .sprint {
-    width: 371px;
-    height: 371px;
+    max-inline-size: 81vw;
+    padding: 15px 20px;
+    block-size: 55px;
   }
   
+  .floppy-icon {
+    position: relative;
+    inline-size: 21px;
+    mix-blend-mode: difference;
+    block-size: 21px;
   }
+}

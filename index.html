@@ -519,7 +519,6 @@
           </div>
         </div>
       </article>
-
       <div class="save-container">
         <button
           class="save-container__btn btn"
@@ -527,18 +526,19 @@
           onclick="window['dialog'].showModal()"
           aria-controls="dialog"
         >
-          <svg class="floppy-icon" viewbox="0 0 39 39">
-            <use href="./svg/symbol.svg#floppy" />
+          <svg class="floppy-icon" width="100%" height="100%" viewbox="0 0 21 21">
+            <use href="./svg/symbol.svg#floppy"></use>
           </svg>
           <span class="btn__caption">Сохранить на память</span>
         </button>
       </div>
-
       <dialog id="dialog" class="dialog-box section-style">
-        <svg viewbox="0 0 39 39" width="39" height="39">
+        <svg viewbox="0 0 21 21" width="39" height="39">
           <use href="./svg/symbol.svg#floppy" />
         </svg>
-        <span class="dialog-box__text">Вставьте дискету, чтобы продолжить</span>
+        <span class="dialog-box__text"
+          >Вставьте дискету, чтобы продолжить</span
+        >
         <button
           class="dialog-box__btn btn"
           type="button"
