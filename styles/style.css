@@ -212,7 +212,6 @@
   line-height: 90%;
   color: #fff;
   mix-blend-mode: difference;
-  white-space: nowrap;
   position: relative;
 }
 
@@ -225,14 +224,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  block-size: 85px;
+  min-block-size: 85px;
   margin: 0 auto 100px; 
   padding: 5px 20px 8px 20px; 
   max-inline-size: 83vw; 
   background-color: #fff;
   flex-wrap: wrap;
   object-fit: contain;
-  gap: 8px;
+  gap: 5px;
 }
 
 .save-icon {
@@ -277,14 +276,15 @@
   block-size: 39px;
 }
 
-@media (min-width: 376px) {
+@media (width >= 376px) {
   .save-container__btn {
     flex-direction: row;
     justify-content: center;
     --save-section-padding: 0;
     max-inline-size: 81vw;
     padding: 15px 20px;
-    block-size: 55px;
+    min-block-size: 55px;
+
   }
   
   .floppy-icon {

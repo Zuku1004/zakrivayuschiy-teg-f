@@ -32,51 +32,51 @@
 
 .heart-core {
   fill: transparent;
-  transition: fill 0.3s 0.03s;
+  transition: fill 0.3s 0.03s linear;
 }
 
 .heart-main {
   fill: transparent;
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .heart-border {
-  transition: fill 0.1s;
+  transition: fill 0.1s linear;
 }
 
 .heart-svg:hover .heart-core {
   fill: var(--contour-color, #000);
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .heart-svg:hover .heart-main {
   fill: var(--contour-color, #000);
-  transition: fill 0.3s 0.05s;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .heart-svg:active .heart-core {
   fill: var(--animation-fill-color, #ff0000);
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .heart-svg:active .heart-main {
   fill: var(--animation-fill-color, #ff0000);
-  transition: fill 0.3s 0.05s;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .heart-svg.is-liked .heart-core {
   fill: var(--animation-fill-color, #ff0000);
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .heart-svg.is-liked .heart-main {
   fill: var(--animation-fill-color, #ff0000);
-  transition: fill 0.3s 0.05s;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .heart-svg.is-liked .heart-border {
   fill: var(--animation-fill-color, #ff0000);
-  transition: fill 0.3s 0.06s;
+  transition: fill 0.3s 0.06s linear;
 }
 
 .heart-svg.is-liked .heart-group {
